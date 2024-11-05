@@ -6,7 +6,7 @@ interface SparklineChartProps {
 }
 
 export const SparklineChart = ({
-  data = Array.from({ length: 20 }, (_, i) => ({ value: Math.random() * 100 })),
+  data = Array.from({ length: 20 }, (_) => ({ value: Math.random() * 100 })),
   color = "#8884d8",
 }: SparklineChartProps) => {
   return (
